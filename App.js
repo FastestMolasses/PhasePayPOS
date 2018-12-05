@@ -7,6 +7,7 @@ import {
 import HomePage from './src/pages/HomePage';
 import EnterTotal from './src/pages/EnterTotal';
 import SendReceipt from './src/pages/SendReceipt';
+import SelectCustomer from './src/pages/SelectCustomer';
 
 const AppNavigator = createStackNavigator(
     {
@@ -16,13 +17,16 @@ const AppNavigator = createStackNavigator(
         Enter: {
             screen: EnterTotal,
         },
+        SelectCustomer: {
+            screen: SelectCustomer,
+        },
         Send: {
             screen: SendReceipt,
         },
     },
     {
         initialRouteName: 'Home',
-        headerMode: 'float',
+        headerMode: 'screen',
     },
 );
 

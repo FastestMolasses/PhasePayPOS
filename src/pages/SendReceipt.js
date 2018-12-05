@@ -50,11 +50,12 @@ export default class SendReceipt extends Component {
     };
 
     componentDidMount() {
-        var total = this.props.navigation.getParam('total', '0.00');
+        var total = this.props.navigation.getParam('total', '$0.00');
         this.setState({
             data: {
                 storeName: "McDonald's",
                 spent: total,
+                username: 'FMolasses',
             },
         });
     }
@@ -64,7 +65,10 @@ export default class SendReceipt extends Component {
             <View style={styles.container}>
                 <Text style={styles.text}>Verify Order</Text>
                 <Text style={styles.text1}>
-                    Total: ${this.props.navigation.getParam('total', '0.00')}
+                    Total: {this.props.navigation.getParam('total', '$0.00')}
+                </Text>
+                <Text style={styles.text1}>
+                    Customer: Abe Malla
                 </Text>
                 <TouchableOpacity
                     onPress={() => this.submit()}
