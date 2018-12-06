@@ -67,9 +67,7 @@ export default class SendReceipt extends Component {
                 <Text style={styles.text1}>
                     Total: {this.props.navigation.getParam('total', '$0.00')}
                 </Text>
-                <Text style={styles.text1}>
-                    Customer: Abe Malla
-                </Text>
+                <Text style={styles.text1}>Customer: Abe Malla</Text>
                 <TouchableOpacity
                     onPress={() => this.submit()}
                     style={styles.button}

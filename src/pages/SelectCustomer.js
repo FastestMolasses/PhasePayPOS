@@ -22,7 +22,7 @@ export default class SelectCustomer extends React.Component
                 <Text style={styles.titleText}>Select Customer</Text>
                 <TouchableOpacity style={styles.profileContainer} onPress={this.goToConfirm}>
                     <Image
-                        source={require('../imgs/brownie.jpg')}
+                        source={require('../imgs/ProfilePic.png')}
                         style={styles.profileImage}
                     />
                     <Text style={styles.profileText}>Abe M.</Text>
